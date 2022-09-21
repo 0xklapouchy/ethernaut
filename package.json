@@ -1,0 +1,24 @@
+{
+    "name": "foundry-template",
+    "version": "0.0.1",
+    "description": "Template for Foundry Projects",
+    "license": "MIT",
+    "scripts": {
+        "setup": "make clean && make build",
+        "sync": "make update",
+        "test": "make test",
+        "snapshot": "make snapshot",
+        "format": "make format",
+        "lint": "make lint",
+        "all": "make all"
+    },
+    "devDependencies": {
+        "prettier": "^2.7.1",
+        "prettier-plugin-solidity": "1.0.0-beta.24",
+        "solhint-plugin-prettier": "^0.0.5"
+    },
+    "files": [
+        "src/**/*.sol"
+    ]
+  }
+  
