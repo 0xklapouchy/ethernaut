@@ -18,13 +18,4 @@ update:; forge update
 
 build:; forge build
 
-test :; forge test 
-
-snapshot :; forge snapshot
-
-format :; prettier --write src/**/*.sol && prettier --write src/*.sol
-
-# solhint should be installed globally
-lint :; solhint src/**/*.sol && solhint src/*.sol
-
-anvil :; anvil -m 'test test test test test test test test test test test junk'
+test :; forge test
