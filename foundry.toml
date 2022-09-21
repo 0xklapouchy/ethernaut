@@ -5,6 +5,8 @@ libs = ['lib']
 fs_permissions = [{ access = "read", path = "./out"}]
 verbosity = 2
 
+eth_rpc_url = 'https://eth-rinkeby.alchemyapi.io/v2/API_KEY'
+
 # Remappings in remappings.txt
 
 # See more config options https://github.com/gakonst/foundry/tree/master/config
