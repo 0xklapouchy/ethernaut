@@ -3,7 +3,7 @@ src = 'src'
 out = 'out'
 libs = ['lib']
 fs_permissions = [{ access = "read", path = "./out"}]
-verbosity = 2
+verbosity = 1
 
 eth_rpc_url = 'https://eth-rinkeby.alchemyapi.io/v2/API_KEY'
 
