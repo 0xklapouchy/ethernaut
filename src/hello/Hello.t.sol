@@ -8,11 +8,11 @@ import "../utils/Ethernaut.sol";
 import "./Hello.sol";
 
 contract HelloTest is Test, Ethernaut {
-    function testLevel0() public broadcasted {
+    function testHello() public broadcasted {
         Instance instance = Instance(getLevelInstance(Levels.hello));
 
         instance.authenticate(instance.password());
 
-        submitLevelInstance(address(instance));
+        require(validateLevelInstance(Levels.hello, address(instance)), "no validation");
     }
 }

@@ -17,17 +17,27 @@ contract Ethernaut is Script {
 
     function getLevelInstance(address level) internal returns (address payable) {
         vm.recordLogs();
-
-        (bool success, bytes memory data) = ethernaut.call(abi.encodeWithSelector(0xdfc86b17, level));
-        require(success && data.length == 0, "no instance");
-
+        IEthernaut(ethernaut).createLevelInstance(level);
         Vm.Log[] memory entries = vm.getRecordedLogs();
 
         return abi.decode(entries[0].data, (address));
     }
 
-    function submitLevelInstance(address instance) internal {
-        (bool success, bytes memory data) = ethernaut.call(abi.encodeWithSelector(0xc882d7c2, address(instance)));
-        require(success && data.length == 0, "already submited");
+    function validateLevelInstance(address level, address instance) internal returns (bool) {
+        return ILevel(level).validateInstance(instance, msg.sender);
     }
+
+    function submitLevelInstance(address instance) internal {
+        IEthernaut(ethernaut).submitLevelInstance(instance);
+    }
+}
+
+interface IEthernaut {
+    function createLevelInstance(address level) external;
+
+    function submitLevelInstance(address instance) external;
+}
+
+interface ILevel {
+    function validateInstance(address instance, address player) external returns (bool);
 }

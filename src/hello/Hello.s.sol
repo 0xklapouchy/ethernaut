@@ -9,6 +9,7 @@ import "./Hello.sol";
 contract HelloSolver is Ethernaut {
     function run() public broadcasted {
         Instance instance = Instance(getLevelInstance(Levels.hello));
+
         instance.authenticate(instance.password());
 
         submitLevelInstance(address(instance));
