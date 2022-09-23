@@ -7,4 +7,5 @@ library Levels {
     address internal constant fallback_ = 0x9CB391dbcD447E645D6Cb55dE6ca23164130D008;
     address internal constant fallout = 0x5732B2F88cbd19B6f01E3a96e9f0D90B917281E5;
     address internal constant coinflip = 0x4dF32584890A0026e56f7535d0f2C6486753624f;
+    address internal constant telephone = 0x0b6F6CE4BCfB70525A31454292017F640C10c768;
 }
