@@ -1,18 +1,18 @@
 // SPDX-License-Identifier: MIT
 
 pragma solidity >=0.6.0 <0.9.0;
+pragma experimental ABIEncoderV2;
 
 import "forge-std/Test.sol";
+import "../utils/Ethernaut.sol";
 import "./Hello.sol";
 
-contract HelloTest is Test {
-    Instance challenge = Instance(0xE1f0d4A2F1f61A9D31525B8F8Cb30E008D306dC2);
+contract HelloTest is Test, Ethernaut {
+    function testLevel0() public broadcasted {
+        Instance instance = Instance(getLevelInstance(Levels.hello));
 
-    function test() public {
-        vm.startBroadcast();
+        instance.authenticate(instance.password());
 
-        challenge.authenticate(challenge.password());
-
-        vm.stopBroadcast();
+        submitLevelInstance(address(instance));
     }
 }
