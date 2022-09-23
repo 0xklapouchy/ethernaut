@@ -9,7 +9,7 @@ import "./CoinFlipAttacker.sol";
 
 contract CoinFlipSolver is Ethernaut {
     function run() public broadcasted {
-        CoinFlip instance = CoinFlip(getLevelInstance(Levels.coinFlip));
+        CoinFlip instance = CoinFlip(getLevelInstance(Levels.coinflip));
         CoinFlipAttacker attacker = new CoinFlipAttacker(address(instance));
 
         for (uint256 i = 0; i < 10; i++) {

@@ -10,7 +10,7 @@ import "./CoinFlipAttacker.sol";
 
 contract CoinFlipTest is Test, Ethernaut {
     function testCoinFlip() public broadcasted {
-        CoinFlip instance = CoinFlip(getLevelInstance(Levels.coinFlip));
+        CoinFlip instance = CoinFlip(getLevelInstance(Levels.coinflip));
 
         CoinFlipAttacker attacker = new CoinFlipAttacker(address(instance));
 
@@ -19,6 +19,6 @@ contract CoinFlipTest is Test, Ethernaut {
             attacker.attack();
         }
 
-        require(validateLevelInstance(Levels.coinFlip, address(instance)), "no validation");
+        require(validateLevelInstance(Levels.coinflip, address(instance)), "no validation");
     }
 }
