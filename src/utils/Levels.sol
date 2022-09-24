@@ -14,4 +14,5 @@ library Levels {
     address internal constant vault = 0xf94b476063B6379A3c8b6C836efB8B3e10eDe188;
     address internal constant king = 0x43BA674B4fbb8B157b7441C2187bCdD2cdF84FD5;
     address internal constant reentrance = 0xe6BA07257a9321e755184FB2F995e0600E78c16D;
+    address internal constant elevator = 0xaB4F3F2644060b2D960b0d88F0a42d1D27484687;
 }
