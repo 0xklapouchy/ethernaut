@@ -9,4 +9,5 @@ library Levels {
     address internal constant coinflip = 0x4dF32584890A0026e56f7535d0f2C6486753624f;
     address internal constant telephone = 0x0b6F6CE4BCfB70525A31454292017F640C10c768;
     address internal constant token = 0x63bE8347A617476CA461649897238A31835a32CE;
+    address internal constant delegation = 0x9451961b7Aea1Df57bc20CC68D72f662241b5493;
 }
