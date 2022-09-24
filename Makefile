@@ -5,11 +5,11 @@ update:; forge update
 
 # Build & Test
 build:; forge build
-test:; forge test
-trace:; forge test -vvv
+test:; forge test --match-path src/${level}/${level}.t.sol
+testall:; forge test
+trace:; forge test -vvvv --match-path src/${level}/${level}.t.sol
+traceall:; forge test -vvvv
 clean:; forge clean
-snapshot:; forge snapshot
-lint:; yarn lint
 
 # Solve
 
