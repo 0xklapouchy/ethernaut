@@ -13,5 +13,5 @@ clean:; forge clean
 
 # Solve
 
-solve:; @forge script ./src/${level}/${level}.s.sol:${level}Solver --private-key ${PRIVATE_KEY} --rpc-url ${RPC_URL} --broadcast
-coinflip:; @forge script ./src/CoinFlip/CoinFlip.s.sol:CoinFlipSolver --private-key ${PRIVATE_KEY} --rpc-url ${RPC_URL} --skip-simulation --slow --delay 15 --broadcast
+solve:; @forge script ./src/${level}/${level}.t.sol:${level}Solver --private-key ${PRIVATE_KEY} --rpc-url ${RPC_URL} --broadcast
+coinflip:; @forge script ./src/CoinFlip/CoinFlip.t.sol:CoinFlipSolver --private-key ${PRIVATE_KEY} --rpc-url ${RPC_URL} --skip-simulation --slow --delay 15 --broadcast

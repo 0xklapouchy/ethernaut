@@ -8,13 +8,20 @@ import "../utils/Ethernaut.sol";
 import "./Telephone.sol";
 import "./TelephoneAttacker.sol";
 
-contract TelephoneTest is Test, Ethernaut {
-    function testTelephone() public broadcasted {
+contract TelephoneSolver is Test, Ethernaut {
+    function run() public {
+        IS_TEST = false;
+        test();
+    }
+
+    function test() public broadcasted {
         Telephone instance = Telephone(getLevelInstance(Levels.telephone));
 
         TelephoneAttacker attacker = new TelephoneAttacker(address(instance));
         attacker.attack();
 
         require(validateLevelInstance(Levels.telephone, address(instance)), "no validation");
+
+        if (!IS_TEST) submitLevelInstance(address(instance));
     }
 }
