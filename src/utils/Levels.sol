@@ -13,4 +13,5 @@ library Levels {
     address internal constant force = 0x22699e6AdD7159C3C385bf4d7e1C647ddB3a99ea;
     address internal constant vault = 0xf94b476063B6379A3c8b6C836efB8B3e10eDe188;
     address internal constant king = 0x43BA674B4fbb8B157b7441C2187bCdD2cdF84FD5;
+    address internal constant reentrance = 0xe6BA07257a9321e755184FB2F995e0600E78c16D;
 }
