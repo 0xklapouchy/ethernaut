@@ -10,4 +10,5 @@ library Levels {
     address internal constant telephone = 0x0b6F6CE4BCfB70525A31454292017F640C10c768;
     address internal constant token = 0x63bE8347A617476CA461649897238A31835a32CE;
     address internal constant delegation = 0x9451961b7Aea1Df57bc20CC68D72f662241b5493;
+    address internal constant force = 0x22699e6AdD7159C3C385bf4d7e1C647ddB3a99ea;
 }
