@@ -23,6 +23,14 @@ contract Ethernaut is Script {
         return abi.decode(entries[0].data, (address));
     }
 
+    function getLevelInstanceWithValue(address level, uint256 value) internal returns (address payable) {
+        vm.recordLogs();
+        IEthernaut(ethernaut).createLevelInstance{ value: value }(level);
+        Vm.Log[] memory entries = vm.getRecordedLogs();
+
+        return abi.decode(entries[0].data, (address));
+    }
+
     function validateLevelInstance(address level, address instance) internal returns (bool) {
         return ILevel(level).validateInstance(instance, msg.sender);
     }
@@ -33,7 +41,7 @@ contract Ethernaut is Script {
 }
 
 interface IEthernaut {
-    function createLevelInstance(address level) external;
+    function createLevelInstance(address level) external payable;
 
     function submitLevelInstance(address instance) external;
 }
