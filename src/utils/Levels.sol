@@ -17,4 +17,5 @@ library Levels {
     address internal constant elevator = 0xaB4F3F2644060b2D960b0d88F0a42d1D27484687;
     address internal constant privacy = 0x11343d543778213221516D004ED82C45C3c8788B;
     address internal constant gatekeeperone = 0x9b261b23cE149422DE75907C6ac0C30cEc4e652A;
+    address internal constant gatekeepertwo = 0xdCeA38B2ce1768E1F409B6C65344E81F16bEc38d;
 }
