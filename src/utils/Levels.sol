@@ -21,4 +21,5 @@ library Levels {
     address internal constant naughtcoin = 0x096bb5e93a204BfD701502EB6EF266a950217218;
     address internal constant preservation = 0x97E982a15FbB1C28F6B8ee971BEc15C78b3d263F;
     address internal constant recovery = 0x0EB8e4771ABA41B70d0cb6770e04086E5aee5aB2;
+    address internal constant magicnum = 0x200d3d9Ac7bFd556057224e7aEB4161fED5608D0;
 }
