@@ -19,4 +19,5 @@ library Levels {
     address internal constant gatekeeperone = 0x9b261b23cE149422DE75907C6ac0C30cEc4e652A;
     address internal constant gatekeepertwo = 0xdCeA38B2ce1768E1F409B6C65344E81F16bEc38d;
     address internal constant naughtcoin = 0x096bb5e93a204BfD701502EB6EF266a950217218;
+    address internal constant preservation = 0x97E982a15FbB1C28F6B8ee971BEc15C78b3d263F;
 }
