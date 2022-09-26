@@ -22,4 +22,5 @@ library Levels {
     address internal constant preservation = 0x97E982a15FbB1C28F6B8ee971BEc15C78b3d263F;
     address internal constant recovery = 0x0EB8e4771ABA41B70d0cb6770e04086E5aee5aB2;
     address internal constant magicnum = 0x200d3d9Ac7bFd556057224e7aEB4161fED5608D0;
+    address internal constant aliencodex = 0xda5b3Fb76C78b6EdEE6BE8F11a1c31EcfB02b272;
 }
