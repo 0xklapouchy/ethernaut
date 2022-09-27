@@ -26,4 +26,5 @@ library Levels {
     address internal constant denial = 0xf1D573178225513eDAA795bE9206f7E311EeDEc3;
     address internal constant shop = 0x3aCd4766f1769940cA010a907b3C8dEbCe0bd4aB;
     address internal constant dex = 0xC084FC117324D7C628dBC41F17CAcAaF4765f49e;
+    address internal constant dextwo = 0x5026Ff8C97303951c255D3a7FDCd5a1d0EF4a81a;
 }
