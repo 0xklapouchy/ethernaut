@@ -28,4 +28,5 @@ library Levels {
     address internal constant dex = 0xC084FC117324D7C628dBC41F17CAcAaF4765f49e;
     address internal constant dextwo = 0x5026Ff8C97303951c255D3a7FDCd5a1d0EF4a81a;
     address internal constant puzzle = 0xe13a4a46C346154C41360AAe7f070943F67743c9;
+    address internal constant motorbike = 0x58Ab506795EC0D3bFAE4448122afa4cDE51cfdd2;
 }
